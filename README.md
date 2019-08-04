@@ -12,6 +12,16 @@ They know the way to solve the problem by follow the best practice that RxSwift 
 4. After They resolved the issue. They will create a PR (Pull Request) to merge back to his branch and assign to 1 reviewer
 5. After A PR was merged. The issue was closed also.
 
+# How to run
+1. Run the script `setup.sh` to setup the dependencies of project
+    ```
+    $ ./Scripts/setup.sh
+    ```
+2. If It has an error related to permission, run the command to grant permission for the `setup.sh` script
+    ```
+    chmod +x ./Scripts/setup.sh
+    ```
+
 # References
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 - [Commit Message template](http://karma-runner.github.io/3.0/dev/git-commit-msg.html)
