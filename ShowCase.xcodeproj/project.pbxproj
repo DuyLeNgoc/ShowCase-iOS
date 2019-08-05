@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		D6AB620322F5E527008628C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AB620122F5E527008628C9 /* LaunchScreen.storyboard */; };
 		D6AB620E22F5E527008628C9 /* ShowCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AB620D22F5E527008628C9 /* ShowCaseTests.swift */; };
 		D6AB621922F5E527008628C9 /* ShowCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AB621822F5E527008628C9 /* ShowCaseUITests.swift */; };
+		D6DC793F22F7BED500B0B2F8 /* CredentialValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DC793E22F7BED500B0B2F8 /* CredentialValidatorTests.swift */; };
 		E120CE8AF2B364CDD391A197 /* Pods_ShowCaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CF5D1E406429791F271826 /* Pods_ShowCaseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		D6AB621422F5E527008628C9 /* ShowCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AB621822F5E527008628C9 /* ShowCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseUITests.swift; sourceTree = "<group>"; };
 		D6AB621A22F5E527008628C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DC793E22F7BED500B0B2F8 /* CredentialValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				D6AB620D22F5E527008628C9 /* ShowCaseTests.swift */,
 				D6AB620F22F5E527008628C9 /* Info.plist */,
+				D6DC793E22F7BED500B0B2F8 /* CredentialValidatorTests.swift */,
 			);
 			path = ShowCaseTests;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				D6AB620522F5E527008628C9 /* Sources */,
 				D6AB620622F5E527008628C9 /* Frameworks */,
 				D6AB620722F5E527008628C9 /* Resources */,
+				9CDC8DACD2F9AE311F0FF322 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +218,7 @@
 				D6AB621022F5E527008628C9 /* Sources */,
 				D6AB621122F5E527008628C9 /* Frameworks */,
 				D6AB621222F5E527008628C9 /* Resources */,
+				7697F73931E747BA8202738E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +323,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7697F73931E747BA8202738E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowCaseUITests/Pods-ShowCaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowCaseUITests/Pods-ShowCaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowCaseUITests/Pods-ShowCaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CDC8DACD2F9AE311F0FF322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowCaseTests/Pods-ShowCaseTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowCaseTests/Pods-ShowCaseTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowCaseTests/Pods-ShowCaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D6AB622722F61FA2008628C9 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6AB620E22F5E527008628C9 /* ShowCaseTests.swift in Sources */,
+				D6DC793F22F7BED500B0B2F8 /* CredentialValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +641,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40DBCF4BB7D6EC7A8377B045 /* Pods-ShowCaseTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8955GH44X6;
@@ -623,7 +662,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8640472ED579B38E7E8011BC /* Pods-ShowCaseTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8955GH44X6;
@@ -645,7 +683,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C4246D3A6CEB9CDE5A7557E /* Pods-ShowCaseUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8955GH44X6;
 				INFOPLIST_FILE = ShowCaseUITests/Info.plist;
@@ -666,7 +703,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F17C3FB3888D9B512459FDF /* Pods-ShowCaseUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8955GH44X6;
 				INFOPLIST_FILE = ShowCaseUITests/Info.plist;
