@@ -180,6 +180,7 @@
 				D6AB622722F61FA2008628C9 /* SwiftLint */,
 				D6AB61F222F5E526008628C9 /* Frameworks */,
 				D6AB61F322F5E526008628C9 /* Resources */,
+				AFDE327859D195DD56426115 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +356,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowCaseTests/Pods-ShowCaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDE327859D195DD56426115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowCase/Pods-ShowCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowCase/Pods-ShowCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowCase/Pods-ShowCase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6AB622722F61FA2008628C9 /* SwiftLint */ = {
